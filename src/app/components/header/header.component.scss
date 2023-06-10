@@ -1,0 +1,26 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #002868;
+}
+
+h1{
+  color: white;
+  padding: 0px;
+  font-family: Alfa Slab One, sans-serif;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+span{
+  color: 	#bf0a30;
+}
+
+li{
+  display: inline;
+  margin: 20px;
+  color: white;
+  font-size: 25px;
+}
