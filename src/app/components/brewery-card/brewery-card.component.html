@@ -1,1 +1,34 @@
-<p>brewery-card works!</p>
+<div class="container" *ngIf="brewery">
+  <div class="elements">
+    <h1>{{brewery.name}}</h1>
+    <h2>{{brewery.brewery_type}}</h2>
+    <span>State: <strong>{{brewery.state}}</strong></span>
+    <span>City: <strong>{{brewery.city}}</strong></span>
+    <span>Official Page: <strong><a href="{{brewery.website_url}}" target="_blank">{{brewery.name}}</a></strong></span>
+    <address>
+      Contacts:<br>
+      Tel.: <a href="tel:+{{brewery.phone}}">{{brewery.phone}}</a><br>
+      {{brewery.address_1}}, {{brewery.postal_code}}
+    </address>
+  </div>
+</div>
+
+
+<!-- export interface Brewery {
+  id: string
+  name: string
+  brewery_type: string
+  address_1: string
+  address_2: any
+  address_3: any
+  city: string
+  state_province: string
+  postal_code: string
+  country: string
+  longitude: string
+  latitude: string
+  phone: string
+  website_url: string
+  state: string
+  street: string
+} -->

@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import 'bootstrap/scss/bootstrap';
 
 html, body{
   padding: 0px;
   margin: 0px;
   font-family: Lato, sans-serif;
+  font-weight: bold;
+  background-color: #F6C101;
 }
+

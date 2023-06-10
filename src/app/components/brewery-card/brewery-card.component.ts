@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Brewery } from 'src/app/models/brewery/brewery';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-brewery-card',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./brewery-card.component.scss']
 })
 export class BreweryCardComponent {
+
+  @Input() brewery?: Brewery;
+
+  constructor(private dataService: DataService){}
+
+
 
 }

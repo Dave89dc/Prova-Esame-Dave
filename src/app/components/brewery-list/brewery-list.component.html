@@ -1,1 +1,28 @@
-<p>brewery-list works!</p>
+<app-header></app-header>
+<div class="container">
+  <div class="filter">
+    <div class="filter-title">
+      <h1>Select Breweries:</h1>
+    </div>
+    <div class="select-container">
+      <div class="select-box">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Insert brewery's name" [(ngModel)]="value">
+        <button (click)="filterByName()">Search</button>
+        <button (click)="allBreweries(); value=''">All Breweries</button>
+      </div>
+      <div class="select-box">
+        <label for="state">Select State:</label>
+        <select [(ngModel)]="state" id="state" (change)="filterByState()">
+          <option *ngFor="let state of states" value="{{state}}">{{state}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="(breweriesCopy.length <= 0)" class="no-results-box">
+    <h1>"No results found"</h1>
+  </div>
+  <app-brewery-card *ngFor="let brewery of breweriesCopy | slice: (page-1) * pageSize : page * pageSize" [brewery]="brewery"></app-brewery-card>
+  <ngb-pagination class="d-flex justify-content-center" [collectionSize]="breweriesCopy.length" [pageSize]="pageSize" [(page)]="page" [boundaryLinks]="true" aria-label="Default pagination"></ngb-pagination>
+</div>
+<app-footer></app-footer>

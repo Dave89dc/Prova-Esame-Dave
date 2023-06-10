@@ -1,0 +1,87 @@
+main{
+  width: 90%;
+  height: 91vh;
+  margin: 40px auto;
+  background-color: #002868;
+  border: 3px solid white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+h1{
+  font-size: 120px;
+  line-height: 120px;
+  font-family: Alfa Slab One, sans-serif;
+  color: white;
+}
+
+.american{
+  color: #bf0a30;
+  font-size: 160px;
+}
+
+img{
+  width: 600px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.welcome-text{
+  color: white;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.content{
+  width: 750px;
+  margin: 40px;
+}
+
+button{
+  width: 130px;
+  height: 90px;
+  background-image: url('../../../assets/beer.jpg');
+  background-size: cover;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+button:active{
+  opacity: 1;
+}
+
+.text-btn{
+  color: white;
+  font-size: 40px;
+}
+
+.visit-site{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin-right: 70px;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}

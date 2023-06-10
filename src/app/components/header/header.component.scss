@@ -4,6 +4,8 @@ header{
   align-items: center;
   padding: 10px 30px;
   background-color: #002868;
+  border-bottom: 3px solid white;
+  height: 120px;
 }
 
 h1{
@@ -15,7 +17,7 @@ h1{
 }
 
 span{
-  color: 	#bf0a30;
+  color: #bf0a30;
 }
 
 li{
@@ -23,4 +25,19 @@ li{
   margin: 20px;
   color: white;
   font-size: 25px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+a:hover{
+  text-decoration: underline;
 }
