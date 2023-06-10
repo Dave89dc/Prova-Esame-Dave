@@ -19,7 +19,7 @@
       </div>
     </div>
   </div>
-  <div *ngIf="(breweriesCopy.length <= 0)" class="no-results-box">
+  <div *ngIf="(breweriesCopy.length < 1)" class="no-results-box">
     <h1>"No results found"</h1>
   </div>
   <app-brewery-card *ngFor="let brewery of breweriesCopy | slice: (page-1) * pageSize : page * pageSize" [brewery]="brewery"></app-brewery-card>
