@@ -76,3 +76,66 @@ h1{
 .d-flex{
   margin: 100px;
 }
+
+
+/* MODIFICHE PER SCHERMI -----------------------------------------------*/
+
+@media screen and (max-width: 1200px){
+
+  .select-box{
+    margin-bottom: 20px;
+  }
+
+  .select-container{
+    flex-direction: column;
+  }
+
+  .container{
+    padding-top: 40px;
+  }
+
+}
+
+@media screen and (max-width: 620px){
+
+  .select-box{
+    flex-direction: column;
+  }
+
+  button{
+    margin-bottom: 10px;
+  }
+
+  input{
+    margin-bottom: 15px;
+  }
+
+  .filter{
+    margin-bottom: 40px;
+    height: fit-content;
+  }
+
+  label{
+    margin-bottom: 5px;
+  }
+
+}
+
+@media screen and (max-width: 435px){
+
+  .filter-title{
+    text-align: center;
+  }
+
+  ngb-pagination li {
+    &:first-child a {
+      span {
+        display: none;
+      }
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+}

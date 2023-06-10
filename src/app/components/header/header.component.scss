@@ -42,3 +42,30 @@ a{
 a:hover{
   text-decoration: underline;
 }
+
+
+/* MODIFICHE PER SCHERMI --------------------------------------------*/
+
+
+@media screen and (max-width: 800px){
+
+  header{
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+
+  h1{
+    line-height: 45px;
+  }
+
+  header{
+    align-items: start;
+    height: 190px;
+  }
+
+}

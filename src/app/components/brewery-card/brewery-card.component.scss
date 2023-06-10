@@ -51,3 +51,19 @@ a{
 a:hover{
   text-decoration: underline;
 }
+
+
+/* MODIFICHE PER SCHERMI -------------------------------------------------*/
+
+
+@media screen and (max-width: 700px){
+
+  .container{
+    width: 100%;
+  }
+
+  .elements{
+    width: 100%;
+  }
+
+}
